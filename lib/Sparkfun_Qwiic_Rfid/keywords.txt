@@ -1,0 +1,25 @@
+########################################################
+# Syntax Coloring Map for SparkFun Qwiic RFID Library #
+########################################################
+# Class
+###################################################################
+
+Qwiic_Rfid				KEYWORD1
+
+###################################################################
+# Methods and Functions
+###################################################################
+
+begin					KEYWORD2
+getTag    			KEYWORD2
+getReqTime			KEYWORD2
+getPrecReqTime				KEYWORD2
+getAllTags				KEYWORD2
+getAllTimes		KEYWORD2
+getAllPrecTimes				KEYWORD2
+changeAddress			KEYWORD2
+clearTags			KEYWORD2
+
+###################################################################
+# Constants
+###################################################################
