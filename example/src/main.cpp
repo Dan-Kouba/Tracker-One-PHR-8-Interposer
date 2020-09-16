@@ -33,12 +33,6 @@ const auto RfidInt = D3;
 
 Logger RfidLog("app.RFID");
 
-// This variable holds the number representing the lightning or non-lightning
-// event issued by the lightning detector. 
-int intVal = 0;
-int noise = 2; // Value between 1-7 
-int disturber = 2; // Value between 1-10
-
 typedef struct {
     String tag;
     unsigned long time;
@@ -78,7 +72,7 @@ void setup()
         Particle.process();
     }
 
-    Wire3.begin(); // Begin Wire before lightning sensor. 
+    Wire3.begin(); // Using the external I2C bus on M8 port
 
     if(myRfid.begin(Wire3)) {
         RfidLog.info("Sparkfun RFID Demo: Ready to scan some tags!"); 
